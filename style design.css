@@ -1,0 +1,298 @@
+html{
+    --rot:340deg;
+    --rot--mob:0deg;
+}
+#origin-div{
+    background-color: #0385B0;
+    background-attachment: fixed;
+    width: 68vw;
+    height: auto;
+    vertical-align: central;
+    display: inline-block;
+    margin:4vw 11vw;
+    box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .2);
+    color:#616161;
+    font-family: 'Open Sans', sans-serif;
+}
+@media screen and (max-width:470px) {
+    #origin-div {
+        width: 100vw;
+        height: 100vw;
+        /*margin:4vw 11vw;*/
+        box-shadow:none;
+        margin:0;
+
+
+    }
+    body{
+        margin: 0;
+    }
+}
+#shoes-img{
+    /*background-color:transparent;*/
+    width: 26vw;
+    height: 20vw;
+    /*padding: 1vw;*/
+    /*margin-top: 7vw;*/
+    margin-right: 5vw;
+    float: right;
+    margin-bottom: 5vw;
+}
+#shoes-box{
+    background: rgb(47, 146, 172);
+    background: linear-gradient(214deg, rgba(47, 146, 172, 0.969625350140056) 48%, rgba(148, 160, 161, 0.9752275910364145) 74%);
+    width:25vw;
+    height: 25vw;
+    margin: 6vw;
+    box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .2);
+    position: relative;
+}
+@media screen and (max-width: 470px) {
+    #shoes-box {
+        width: 100vw;
+        height: auto;
+        margin: 0;
+        box-shadow:none;
+
+    }
+    #shoes-img {
+        width: 60vw;
+        height: 40vw;
+        margin:-7vw 0 12vw 12vw;
+        vertical-align: middle;
+        float: none;
+    }
+}
+.rotateimg180 {
+    -webkit-transform:rotate(var(--rot));
+    -moz-transform: rotate(var(--rot));
+    -ms-transform: rotate(var(--rot));
+    -o-transform: rotate(var(--rot));
+    transform: rotate(var(--rot));
+}
+@media screen and (max-width:470px){
+    .rotateimg180 {
+        -webkit-transform: rotate(var(--rot--mob));
+        -moz-transform: rotate(var(--rot--mob));
+        -ms-transform: rotate(var(--rot--mob));
+        -o-transform: rotate(var(--rot--mob));
+        transform: rotate(var(--rot--mob));
+    }
+}
+#nike-logo{
+/*display: inline;*/
+    width:4rem ;
+    margin-top: 1vw;
+    margin-left: 3vw;
+}
+#share-icon{
+width: 1.2rem;
+    height: 1.2rem;
+    background-color: #0385B0;
+    border-radius:100%;
+    float: right;
+    padding:0.6vw;
+    margin-right: 1vw;
+    margin-top: 1vw;
+}
+@media screen and (max-width: 470px) {
+    #share-icon {
+        margin-right: 4vw;
+        margin-top: 4vw;
+        padding:1vw;
+    }
+}
+#info-box{
+    width:29vw;
+    height:auto;
+    background-color: white;
+    float: right;
+    /*display: inline;*/
+    margin-right:8vw;
+    margin-top: -34vw;
+    padding-bottom: 3vw;
+    box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .2);
+    clear: both;
+}
+#info-box h1{
+    font-size:1.6rem;
+    font-weight:800;
+    display: inline;
+    padding:1vw;
+    /*margin-top: 2vw;*/
+    line-height: 5vw;
+    text-transform: capitalize;
+    margin-left:2vw;
+    color: #585858;
+}
+#info-box h2{
+    font-size:0.9rem;
+    font-weight:800;
+    padding:1vw;
+    margin-top: -1vw;
+    line-height: 2vw;
+    text-transform: uppercase;
+    margin-left:2vw;
+    color: #585858;
+}
+#new{
+    text-transform: uppercase;
+    color:white;
+    font-size: 0.6rem;
+    font-weight:400;
+    background-color: #0385B0;
+    border-radius:15%;
+    padding:0.6vw;
+}
+
+@media screen and (max-width: 470px) {
+    #info-box {
+        width: 100vw;
+        height:auto;
+        margin: 0;
+        padding-bottom: 5vw;
+        box-shadow:none;
+    }
+    #info-box h1 {
+        line-height: 16vw;
+    }
+    #info-box h2 {
+        font-size: 1rem;
+        font-weight: 800;
+        padding: 1.2vw;
+        line-height: 2vw;
+
+    }
+    #new{
+        font-size: 0.8rem;
+    }
+}
+.info-product{
+    margin-left: 2.6vw;
+    font-size: 0.9rem;
+    font-weight: 600;
+    margin-top: -1.9vw;
+    text-transform: capitalize;
+    display: block;
+    clear: both;
+}
+hr{
+    border-top: 0.1vw solid whitesmoke;
+    margin-right: 2.6vw;
+    margin-left: 2.6vw;
+    margin-top: -1.1vw;
+    clear: both;}
+@media screen and (max-width: 470px){
+    hr{
+        border-top: 0.1vw solid whitesmoke;
+        margin:0 2.6vw 6vw 2.6vw ;
+       }
+}
+p{
+    font-size:1vw;
+    font-weight:400;
+    /*display: inline;*/
+    padding:1vw;
+    margin-top: -2.5vw;
+    /*line-height: 7.5vw;*/
+    /*text-transform: capitalize;*/
+    margin-left:2vw;
+    text-align: justify;
+    text-justify: inter-word;
+}
+@media screen and (max-width: 470px){
+    p{
+        font-size: 0.8rem;
+    }
+}
+.svg{
+    width:2vw;
+    height: 2vw;
+    padding: 0.3vw;
+    margin-top: -1.7vw;
+    margin-bottom:1vw;
+    /*margin-left: 2.5vw;*/
+    font-size: 0.5vw;
+
+}
+
+@media screen and (max-width: 470px) {
+    .svg {
+        width: 6vw;
+        height: 6vw;
+    }
+}
+#colors{
+    margin-left: 2.7vw;
+}
+.svg:hover {
+    /*background-color: #616161;*/
+    border-radius: 100%;
+    border: .1vw solid gray;
+}
+.size{
+    background-color:lightgray;
+    border-radius: 0.2vw;
+    /*padding: 0.5vw;*/
+    margin: 0.5vw;
+    width: 2.1vw;
+    height: 1.7vw;
+    font-size: 1vw;
+    font-weight: 700;
+    /*color: black;*/
+    overflow: hidden;
+    text-align: center;
+    border: 0;
+    vertical-align: middle;
+    margin-top:-2vw;
+    margin-bottom:2vw;
+}
+.size:hover{
+    background-color:#0385B0;
+}
+#size-div{
+    margin-left: 2.5vw;
+}
+@media screen and (max-width: 470px) {
+    .size{
+        width: 8vw;
+        height: 8vw;
+        font-size: 3vw;
+        padding: 1vw;
+        font-weight: 900;
+        margin-top: 1vw;
+    }
+}
+#buy{
+    font-size:0.8rem;
+    font-weight: 700;
+    color: white;
+    text-transform: uppercase;
+    width: 14vw;
+    height: 3vw;
+    border:0;
+    text-align: center;
+    /*vertical-align: middle;*/
+    /*padding: 1vw;*/
+    background-color: #0385B0;
+    margin-left: 2.5vw;
+    /*border-radius: 20%;*/
+}
+
+#buy:hover{
+    background-color:cornflowerblue;
+}
+@media screen and (max-width: 470px) {
+    #buy {
+        font-size: 0.8rem;
+        font-weight: 700;
+        width: 48vw;
+        height: 12vw;
+        margin-left: 2.5vw;
+    }
+}
+#price{
+    font-size: 1.2rem;
+    font-weight: 800;
+    margin-left: 2.5vw;
+}
